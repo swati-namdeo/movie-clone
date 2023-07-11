@@ -1,0 +1,99 @@
+#cardBox{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; 
+    padding: 2vh 0px;
+    margin-bottom: 1em;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.loaderHeart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 44em;
+}
+.cardFlex{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0px;
+    padding: 1em;
+     /* pointer-events: none; */
+}
+.cardFlex:hover{
+    transform: translate3D(0,-1px,0) scale(1.1);
+    /* transform: scale(1.1);
+    margin: 2em 1em; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+.cardFlex img{
+    width: 20vh;
+    height: 30vh;
+    border-radius: 5%;
+}
+#pagin{
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    padding: 1em 5em ;
+}
+#dayWeek{
+    border: 1px solid black;
+    border-radius: 2em;
+    width: fit-content;
+    font-size: 22px;
+    background-color: darkgray;
+    margin-bottom: 2vh;
+}
+#toggleBox{
+    border-radius: 2em;
+}
+
+#dayButton{
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+
+#weekButton{
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+@media screen and (max-width: 450px) {
+    #pagin{
+        display: flex;
+        justify-content: space-around;
+        font-size: 26px;
+        padding: 1em 0em ;
+        
+    }
+    #dayWeek{
+        width: fit-content;
+        font-size: 22px;
+        margin-bottom: 2vh;
+    }
+    #cardBox{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto; 
+        margin-bottom: 2vh;
+    }
+    .cardFlex{
+        margin: 0px;
+       
+    }
+    .loaderHeart{  
+        height: 32em;
+    }
+   
+}

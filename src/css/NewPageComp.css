@@ -1,0 +1,108 @@
+.pageBox{
+    display: flex;
+    justify-content: space-around;
+    background-color: #a8eb12;
+    background-image: linear-gradient(to right bottom, #61a4e8, #005176, #00898d, #c1ed61);
+    padding: 2em;
+}
+ #imagesPoster{
+    border-radius: 8%;
+    margin-top: 1vh;
+ 
+}
+.titleOfPage{
+   width: 70%;
+}
+
+#usrScoreTxt{
+   margin-top: -8vh;
+   margin-left: 10vh;
+   font-size: 22px;
+}
+
+.titleOfPage span{
+   font-size: 26px;
+   font-weight: bold;
+}
+
+#boldTxtForVote{
+   font-weight: bold;
+   font-size: 16px;
+}
+#idBoxVoteAvg{
+   background-color: rgb(122, 238, 199);
+   border-radius: 25em;
+}
+#tagLineTxt{
+   font-family: 'Times New Roman';
+   font-size: 22px;
+   color: yellow;
+   margin: 1vh 0px;
+}
+.cardOfBox{
+   display: flex;
+   flex-direction: column; 
+   margin: 0px 2em;
+
+}
+
+.castPoster{
+   width: 20vh;
+   height: 30vh;
+   border-radius: 5%;
+}
+.otherBox{
+   padding: 2em 0px;
+}
+.gridOfCast{
+   display: flex;
+   flex-direction: row;
+   overflow-x: auto; 
+}
+.castBoxDetails{
+   margin: 1em;
+}
+
+.genresBox{
+   display: flex;
+   margin-top: 1em;
+}
+.genresBox div{
+   display: contents;
+}
+.faStarGenre{
+   color: yellow;
+   margin: 0px 1vh 0px 1vh;
+}
+.budgetRevenue{
+   margin-top: 5px;
+}
+@media screen and (max-width: 450px) {
+   .pageBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1em;
+  }
+  #imagesPoster{
+   width: 15em;
+   height: 20em;
+  }
+  .cardOfBox{
+   display: flex;
+   flex-direction: column; 
+   margin: 0px 0em;
+  }
+  .titleOfPage{
+   width: 99%;
+   margin: 1em 0px;
+}
+#youtubSize{
+   width: 18em;
+   height: 10em;
+}
+.contentLoad{
+   width: 370px;
+   height: 32em
+}
+}

@@ -1,0 +1,81 @@
+.searchPageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.input-box {
+    position: relative;
+    height: 76px;
+    max-width: 70%;
+    width: 100%;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .input-box i,
+  .input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+  }
+  .input-box input {
+    height: 100%;
+    width: -webkit-fill-available;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+  }
+  .input-box .button {
+    right: 20px;
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+    border: none;
+    padding: 20px 12px;
+    background-color: rgb(218, 153, 32);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+  }
+
+  .gridSearchResult{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: auto auto auto;
+    padding: 0px 20em;
+  }
+
+  @media screen and (max-width: 450px) {
+    .searchPageContainer{
+      padding: 5% 0px;
+    }
+    .input-box {
+      position: relative;
+      height: 76px;
+      width: 100%;
+  
+    }
+    .input-box input::-webkit-input-placeholder {
+      color: transparent
+    }
+    .gridSearchResult{
+      grid-template-columns: auto auto; 
+      gap: 0px;
+      padding: 0px;
+      width: 100%;
+    }
+  }

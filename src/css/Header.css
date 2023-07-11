@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    
+}
+.container{
+  padding: 0px 6vh;
+}
+.headers img{
+    height: 12vh;
+}
+.headers{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(cadetblue , #41bdd5);
+    align-items: center;
+   
+}
+
+.headers ul{
+    list-style-type : none;
+    font-size: 24px;
+}
+/* .headers ul:hover{
+  background-color: tomato;
+  width: fit-content;
+} */
+
+
+#ulDIv{
+    display: flex;
+   
+}
+#searchIcon{
+    font-size: 24px;
+    display: flex;
+   align-items: center;
+    color: black;
+    text-decoration: none;
+}
+#searchIcon:hover{
+  color: red;
+  text-decoration: none;
+}
+
+.linkComp{
+    color: black;
+    text-decoration: none;
+}
+.linkComp:hover{
+  color: red;
+  text-decoration: none;
+  
+}
+
+#footerApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #61a4e8, #000a76);
+    padding: 1vh 0px;
+    margin-top: -2vh;
+}
+
+/* .submenuMovieBox{
+    display: none;
+  transition: 0.2s 1s;
+} */
+
+/* .menuMovieBox:hover .submenuMovieBox {
+    position: absolute;
+    display: block;
+    transition-delay: 0s; 
+    margin-top: 1vh;
+    background-color: cornsilk;
+    box-shadow: 0px 8px 24px 0px rgba(12, 12, 12, 0.2);
+    padding: 0px 1vh;
+    margin-left: 1em;
+  } */
+  .submenuMovieBox {
+    display: none;
+    position: fixed;
+    background-color: rgb(235, 232, 232);
+    min-width: 222px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 2px 2vh;
+    z-index: 1;
+    margin-left: 1em;
+  }
+
+  .menuMovieBox:hover .submenuMovieBox {
+    display: block;
+  }
+
+  .submenuMovieBox .linkMovies:hover {
+    padding-left: 10px;
+    border-left: 4px solid #3ca0e7;
+    transition: all 0.3s ease;
+    background-color: thistle;
+  }
+  .submenuMovieBox .linkMovies {
+    text-decoration: none;
+    color: black;
+}
+
+.submenuMovieBox .linkMovies { transition: all 0.5s ease; }
+
+
+@media screen and (max-width: 450px) {
+  .container{
+    padding: 0px 1vh;
+  }
+  .headers{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: linear-gradient(cadetblue , #41bdd5);
+    align-items: flex-start;
+   padding-left: 1vh;
+}
+
+.headers ul{
+    margin-left: -5vh;
+}
+
+.menuMovieBox:hover .submenuMovieBox {
+  margin-left: 6vh;
+}
+.headers ul:hover{
+  background-color: sandybrown;
+  width: 100%;
+}
+
+.headers #searchIcon:hover{
+  background-color: sandybrown;
+  width: 100%;
+}
+}
